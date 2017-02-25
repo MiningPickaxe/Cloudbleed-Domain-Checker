@@ -28,19 +28,13 @@ app.get('/false', (req, res) => {
 
 function caching() {
   winston.log('info', 'Is cached: ' + cached);
-  //if (cached == false) {
-    stream = fs.readFileSync(__dirname + '/database.txt', 'utf8');
-
-      winston.log('info', "Daten gelesen");
-      //stream = data;
-      //console.log(stream);
-      cached = true;
-      winston.log('info', cached);
+  stream = fs.readFileSync(__dirname + '/database.txt', 'utf8')      
+  winston.log('info', "Read data");
+  cached = true;
+  winston.log('info', cached);
 
 
-    //console.log(__dirname + '/database.txt');
-
-  //};
+   
 };
 
 
@@ -58,7 +52,7 @@ app.post('/webhook', (req, res) => {
     caching();
   };
   if(stream !== undefined) {
-    //winston.log('info', "Hat inhalt");
+    //winston.log('info', "Has content");
   }
   searching(req.body.msg);
   if (match !== -1) {
@@ -67,7 +61,7 @@ app.post('/webhook', (req, res) => {
     res.redirect('/false');
   };
 
-  //res.redirect('/');
+  
 })
 
 app.listen(6968, () => {
