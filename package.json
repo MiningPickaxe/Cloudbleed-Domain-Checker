@@ -1,0 +1,11 @@
+{
+  "name": "cloudflarechecker",
+  "version": "1.0.0",
+  "description": "Checks domains for leaks, see documentation for more details",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Mining_Pickaxe",
+  "license": "ISC"
+}

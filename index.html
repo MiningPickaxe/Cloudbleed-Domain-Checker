@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Cloudflare SSL Leak Domain Checker</title>
+</head>
+<body>
+<h1>Cloudbleed Domain Checker</h1>
+<h2>Cloudbleed is a data leak in Cloudflare Proxys from 2016-09-22 to 2017-02-21</h2>
+Learn more on the <a href="https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/">Cloudflare Blog</a> or <a href="https://bugs.chromium.org/p/project-zero/issues/detail?id=1139">Google issue tracker</a>
+
+<br><br><br>
+Post your Domain in the field below, including the ending like .de, .com, .co.uk etc....
+<br>
+a small example: cloudflare.com
+<br>
+NOT: https://cloudflare.com
+<br> <br> <br>
+  <form method="post" action="/webhook">
+    <input type="text" name="msg" placeholder="Your URL including .com etc." />
+    <br>
+    <input type="submit" name"submit" value="Check URL" />
+  </form>
+  <br> <br> <br> <br>
+  If you click on "Check URL" your requested URL and your IP will logged to prevent abuse
+  <br>
+  The Database used is <a href="https://github.com/pirate/sites-using-cloudflare">THIS ONE.</a> Thanks to the Team for updating the database regulary.
+  <br> 
+  My server syncs the database every 30 minutes to provide up-to-date data
+</body>
+</html>
