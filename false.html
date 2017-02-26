@@ -1,24 +1,13 @@
 <html>
 <head>
-  <title>Cloudflare SSL Leak Domain Checker</title>
+  <title>Cloudflare Proxy Leak Domain Checker</title>
 </head>
 <body>
-  This Domain did not use Cloudflare DNS according to the database from <a href="https://github.com/pirate/sites-using-cloudflare">Pirate on Github</a>
+  This Domain did not use Cloudflare as a Proxy according to the database <a href="https://github.com/pirate/sites-using-cloudflare">'sites using cloudflare', created by Pirate</a>
   <br> <br>
-  This does not mean, that the Domain was not leaked, beause the leak was in Cloudflare Proxys and not Cloudflare DNS. We are currently working on testing for Cloudflare Proxys
-  <br>
-  You just have a better chance, that you were not leaked.
-  <br>
-  Please change your passwords every few weeks to stay safe  
+  This is, however, no clear indicator whether requests were actually leaked or not because this list is incomplete and features domains not affected. Narrowing down the list is WIP.
   <br> <br> <br>
-  <button onclick="goBack()">Go Back</button>
-
-  <script>
-  function goBack() {
-    window.history.back();
-  }
-  </script>
-
+  <button onclick="window.history.back()">Go Back</button>
 </body>
 </html>
 
