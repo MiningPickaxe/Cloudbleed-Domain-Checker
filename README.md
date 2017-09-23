@@ -10,7 +10,7 @@ To get quick search results, the whole database is cached once the first person 
 The database is (hopefully, if it works) updated every 30 minutes to keep the results up-to-date.
 
 ## Where can I visit the current site?
-You can currently visit the site here: http://pickarsch.xyz
+You can currently visit the site here: http://pickarsch.xyz (No longer maintained, offline)
 The site is still WIP, that is why this Repository was created.
 
 The server is maintained by me.
